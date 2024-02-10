@@ -7,11 +7,14 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-
-      {data.map(piece =>
-        <Painting name={piece.name} artist={piece.artist.name} img={piece.images.thumbnail} />
-      )}
+      <div className='grid-container'>
+        <Navbar />
+        <div className='painting-container'>
+          {data.map(piece =>
+            <Painting name={piece.name} artist={piece.artist.name} img={piece.images.thumbnail} />
+          )}
+        </div>
+      </div>
     </>
   )
 }

@@ -1,9 +1,13 @@
-function Painting({name, img, artist}){
+import './Painting.css';
+
+function Painting({ name, img, artist }) {
     return (
-        <div>
-            <h3>{name}</h3>
-            <h4>{artist}</h4>
+        <div className="Painting">
             <img src={img} alt={name} />
+            <div>
+                <h2>{name}</h2>
+                <h3>{artist}</h3>
+            </div>
         </div>
     )
 }
