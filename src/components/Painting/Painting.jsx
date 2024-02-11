@@ -1,14 +1,17 @@
 import './Painting.css';
+import { Link } from 'react-router-dom';
 
-function Painting({ name, img, artist }) {
+function Painting({ name, img, artist, id }) {
     return (
-        <div className="Painting">
-            <img src={img} alt={name} />
-            <div>
-                <h2>{name}</h2>
-                <h3>{artist}</h3>
+        <Link to={`/${id}`}>
+            <div className="Painting">
+                <img src={img} alt={name} />
+                <div>
+                    <h2>{name}</h2>
+                    <h3>{artist}</h3>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

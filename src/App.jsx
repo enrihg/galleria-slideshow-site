@@ -1,21 +1,20 @@
-import './App.css'
-import data from './data.js';
+import './App.css';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import Gallery from './components/Gallery/Gallery.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
-import Painting from './components/Painting/Painting.jsx';
+import PaintingDetail from './components/PaintingDetail/PaintingDetail.jsx';
 
 function App() {
 
   return (
-    <>
-      <div className='grid-container'>
-        <Navbar />
-        <div className='painting-container'>
-          {data.map(piece =>
-            <Painting name={piece.name} artist={piece.artist.name} img={piece.images.thumbnail} />
-          )}
-        </div>
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar/>
+      {/* <Link to='/holis'>Holis</Link> */}
+      <Routes>
+        <Route path='/' element={<Gallery />} />
+        <Route path='/:id' element={<PaintingDetail />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

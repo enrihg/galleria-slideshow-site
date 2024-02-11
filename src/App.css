@@ -36,10 +36,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.grid-container {
-  display: grid;
-  justify-content: center;
-}
+
 
 .painting-container {
   columns: 1;
