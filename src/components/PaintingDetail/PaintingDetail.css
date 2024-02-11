@@ -1,0 +1,76 @@
+.PaintingDetail {
+    display: grid;
+    padding: 1.25rem 1.5rem 0 1.5rem;
+
+    img {
+        max-width: 100%;
+    }
+
+    button {
+        position: absolute;
+        margin: 1rem 0 0 1rem;
+        padding: 0.875rem 1rem 0.875rem 1rem;
+        background-color: var(--clr-900);
+        border: none;
+        color: var(--clr-100);
+        cursor: pointer;
+        filter: opacity(0.8);
+        font-family: inherit;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2.14px;
+
+        img {
+            margin-right: 14px;
+        }
+    }
+
+    .title {
+        position: relative;
+        background-color: var(--clr-100);
+        padding: 1.5rem;
+        width: 85%;
+        transform: translateY(-60%);
+        margin-bottom: -85px;
+    }
+
+    h1 {
+        color: var(--clr-900);
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        color: var(--clr-700);
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    h3 {
+        margin-top: 8px;
+        line-height: 0.45; 
+        justify-self: self-end;
+        color: var(--clr-200);
+        font-size: 100px;
+    }
+
+    .img-artist {
+        width: 4rem;
+        margin-left: 1rem;
+    }
+
+    p {
+        color: var(--clr-700);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.75rem;
+    }
+
+    a {
+        color: var(--clr-700);
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1.93px;
+        margin: 4rem 0 4rem 0;
+    }
+}

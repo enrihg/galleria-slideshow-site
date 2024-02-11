@@ -1,4 +1,32 @@
 .Gallery {
     display: grid;
     justify-content: center;
+    padding: 1.25rem 0 1.25rem 0;
+
+    .painting-container {
+        columns: 1;
+        column-gap: 2rem;
+      }
+      
+      .painting-container > * {
+        break-inside: avoid;
+      }
+      
+      @media screen and (width >= 705px) {
+        .painting-container {
+          columns: 2;
+        }
+      }
+      
+      @media screen and (width >= 1070px) {
+        .painting-container {
+          columns: 3;
+        }
+      }
+      
+      @media screen and (width >= 1440px) {
+        .painting-container {
+          columns: 4;
+        }
+      }
 }
