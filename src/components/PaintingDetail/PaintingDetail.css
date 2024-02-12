@@ -73,4 +73,40 @@
         letter-spacing: 1.93px;
         margin: 4rem 0 4rem 0;
     }
+
+    .modal {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: hsl(0, 0%, 0%, 0.9);
+       
+        >div {
+            position: relative;
+            text-align: center;
+        }
+
+        button {
+            margin: 0;
+            padding: 0;
+            right: 0;
+            transform: translate(-130%, -3rem);
+            background: none;
+            color: var(--clr-100);
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+    
+    .modal.invisible {
+        display: none;
+    }
+
 }

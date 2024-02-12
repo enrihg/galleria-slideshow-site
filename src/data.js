@@ -49,6 +49,22 @@ import arnolfiniHeroSmall from "./assets/arnolfini-portrait/hero-small.jpg";
 import monalisaHeroSmall from "./assets/mona-lisa/hero-small.jpg";
 import swingHeroSmall from "./assets/the-swing/hero-small.jpg";
 
+/*Gallery images */
+import starryGallery from "./assets/starry-night/gallery.jpg";
+import girlGallery from "./assets/girl-with-pearl-earring/gallery.jpg";
+import guernicaGallery from "./assets/guernica/gallery.jpg";
+import penitentGallery from "./assets/penitent-magdalene/gallery.jpg";
+import stormGallery from "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg";
+import waveGallery from "./assets/the-great-wave-off-kanagawa/gallery.jpg";
+import vangoghGallery from "./assets/van-gogh-self-portrait/gallery.jpg"
+import sleepingGallery from "./assets/the-sleeping-gypsy/gallery.jpg";
+import ladyGallery from "./assets/lady-with-an-ermine/gallery.jpg";
+import cafeGallery from "./assets/the-night-cafe/gallery.jpg";
+import basketGallery from "./assets/the-basket-of-apples/gallery.jpg";
+import boyGallery from "./assets/the-boy-in-the-red-vest/gallery.jpg";
+import arnolfiniGallery from "./assets/arnolfini-portrait/gallery.jpg";
+import monalisaGallery from "./assets/mona-lisa/gallery.jpg";
+import swingGallery from "./assets/the-swing/gallery.jpg";
 
 const data = [
     {
@@ -67,7 +83,7 @@ const data = [
           "small": starryHeroSmall,
           "large": "./assets/starry-night/hero-large.jpg"
         },
-        "gallery": "./assets/starry-night/gallery.jpg"
+        "gallery": starryGallery
       }
     },
     {
@@ -86,7 +102,7 @@ const data = [
           "small": girlHeroSmall,
           "large": "./assets/girl-with-pearl-earring/hero-large.jpg"
         },
-        "gallery": "./assets/girl-with-pearl-earring/gallery.jpg"
+        "gallery": girlGallery
       }
     },
     {
@@ -105,7 +121,7 @@ const data = [
           "small": guernicaHeroSmall,
           "large": "./assets/guernica/hero-large.jpg"
         },
-        "gallery": "./assets/guernica/gallery.jpg"
+        "gallery": guernicaGallery
       }
     },
     {
@@ -124,7 +140,7 @@ const data = [
           "small": penitentHeroSmall,
           "large": "./assets/penitent-magdalene/hero-large.jpg"
         },
-        "gallery": "./assets/penitent-magdalene/gallery.jpg"
+        "gallery": penitentGallery
       }
     },
     {
@@ -143,7 +159,7 @@ const data = [
           "small": stormHeroSmall,
           "large": "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
         },
-        "gallery": "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
+        "gallery": stormGallery
       }
     },
     {
@@ -162,7 +178,7 @@ const data = [
           "small": waveHeroSmall,
           "large": "./assets/the-great-wave-off-kanagawa/hero-large.jpg"
         },
-        "gallery": "./assets/the-great-wave-off-kanagawa/gallery.jpg"
+        "gallery": waveGallery
       }
     },
     {
@@ -181,7 +197,7 @@ const data = [
           "small": vangoghHeroSmall,
           "large": "./assets/van-gogh-self-portrait/hero-large.jpg"
         },
-        "gallery": "./assets/van-gogh-self-portrait/gallery.jpg"
+        "gallery": vangoghGallery
       }
     },
     {
@@ -200,7 +216,7 @@ const data = [
           "small": sleepingHeroSmall,
           "large": "./assets/the-sleeping-gypsy/hero-large.jpg"
         },
-        "gallery": "./assets/the-sleeping-gypsy/gallery.jpg"
+        "gallery": sleepingGallery
       }
     },
     {
@@ -219,7 +235,7 @@ const data = [
           "small": ladyHeroSmall,
           "large": "./assets/lady-with-an-ermine/hero-large.jpg"
         },
-        "gallery": "./assets/lady-with-an-ermine/gallery.jpg"
+        "gallery": ladyGallery
       }
     },
     {
@@ -238,7 +254,7 @@ const data = [
           "small": cafeHeroSmall,
           "large": "./assets/the-night-cafe/hero-large.jpg"
         },
-        "gallery": "./assets/the-night-cafe/gallery.jpg"
+        "gallery": cafeGallery
       }
     },
     {
@@ -257,7 +273,7 @@ const data = [
           "small": basketHeroSmall,
           "large": "./assets/the-basket-of-apples/hero-large.jpg"
         },
-        "gallery": "./assets/the-basket-of-apples/gallery.jpg"
+        "gallery": basketGallery
       }
     },
     {
@@ -276,7 +292,7 @@ const data = [
           "small": boyHeroSmall,
           "large": "./assets/the-boy-in-the-red-vest/hero-large.jpg"
         },
-        "gallery": "./assets/the-boy-in-the-red-vest/gallery.jpg"
+        "gallery": boyGallery
       }
     },
     {
@@ -295,7 +311,7 @@ const data = [
           "small": arnolfiniHeroSmall,
           "large": "./assets/arnolfini-portrait/hero-large.jpg"
         },
-        "gallery": "./assets/arnolfini-portrait/gallery.jpg"
+        "gallery": arnolfiniGallery
       }
     },
     {
@@ -314,7 +330,7 @@ const data = [
           "small": monalisaHeroSmall,
           "large": "./assets/mona-lisa/hero-large.jpg"
         },
-        "gallery": "./assets/mona-lisa/gallery.jpg"
+        "gallery": monalisaGallery
       }
     },
     {
@@ -333,7 +349,7 @@ const data = [
           "small": swingHeroSmall,
           "large": "./assets/the-swing/hero-large.jpg"
         },
-        "gallery": "./assets/the-swing/gallery.jpg"
+        "gallery": swingGallery
       }
     }
   ]
