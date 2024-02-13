@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <Link to='/'>
-            <nav className='Navbar'>
+        <nav className='Navbar'>
+            <Link to='/'>
                 <h1><img className='logo' src={logo} alt="logo" /></h1>
-                <button>START SLIDESHOW</button>
-            </nav>
-        </Link>
+            </Link>
+            <button>START SLIDESHOW</button>
+        </nav>
     )
 }
 
