@@ -35,3 +35,9 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

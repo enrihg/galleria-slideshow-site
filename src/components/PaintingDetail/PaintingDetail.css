@@ -6,14 +6,13 @@
         max-width: 100%;
     }
 
-    button {
+    .button-viewImage,
+    .button-closeImage {
         position: absolute;
         margin: 1rem 0 0 1rem;
         padding: 0.875rem 1rem 0.875rem 1rem;
         background-color: var(--clr-900);
-        border: none;
         color: var(--clr-100);
-        cursor: pointer;
         filter: opacity(0.8);
         font-family: inherit;
         font-size: 10px;
@@ -89,7 +88,7 @@
             text-align: center;
         }
 
-        button {
+        .button-closeImage {
             margin: 0;
             padding: 0;
             right: 0;
@@ -108,5 +107,4 @@
     .modal.invisible {
         display: none;
     }
-
 }
