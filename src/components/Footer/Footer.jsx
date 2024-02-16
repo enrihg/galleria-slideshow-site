@@ -10,14 +10,14 @@ function Footer({ data, picture }) {
     const isLastElement = picture.id === data.length;
 
     return (
-        <footer>
+        <footer className='footer'>
             <progress max={data.length} value={picture.id}></progress>
-            <div className="flex">
+            <div className='flex'>
                 <div>
                     <h4>{picture.name}</h4>
                     <h5>{picture.artist.name}</h5>
                 </div>
-                <div className="flex">
+                <div>
                     <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`}>                       
                         <button disabled={isFirstElement}><img src={backButton} alt="back button icon" /></button>
                     </Link>

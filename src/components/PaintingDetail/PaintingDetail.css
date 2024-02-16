@@ -1,6 +1,10 @@
 .PaintingDetail {
     display: grid;
     padding: 1.25rem 1.5rem 0 1.5rem;
+    grid-template-rows: 1fr auto; /*Sticky footer*/
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 578px;
 
     img {
         max-width: 100%;

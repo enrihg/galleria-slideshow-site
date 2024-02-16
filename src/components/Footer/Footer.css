@@ -1,4 +1,5 @@
-footer {
+.footer {
+
     progress {
         height: 1px;
         width: 100%;
@@ -18,22 +19,32 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 1rem 0 1rem 0;
+
+        >:first-child {
+            max-width: 70%;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        h5 {
+            color: var(--clr-700);
+            margin-top: 0.5rem;
+            font-weight: 400;
+        }
+    }
+
+    button {
+        margin-left: 1rem;
+        width: 1rem;
+        height: 1rem;
     }
 
     button:disabled {
         cursor: initial;
         filter: contrast(0);
     }
-
-    a {
-        /* background-color: aqua; */
-        
-        &:first-of-type { 
-            transform: translateX(-2.5rem);
-        }
-    }
-
-    
-
 
 }
