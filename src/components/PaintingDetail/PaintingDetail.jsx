@@ -19,11 +19,13 @@ function PaintingDetail() {
                 />
                 <button className="button-viewImage" onClick={() => setVisible(!isVisible)}>
                     <img src={iconView} alt="view image icon" /> VIEW IMAGE</button>
-                <div className="title">
-                    <h1>{picture.name}</h1>
-                    <h2>{picture.artist.name}</h2>
+                <div className="title-container">
+                    <div className="title">
+                        <h1>{picture.name}</h1>
+                        <h2>{picture.artist.name}</h2>
+                    </div>
+                    <img className="img-artist" src={picture.artist.image} alt={`Picture of ${picture.artist.name}`} />
                 </div>
-                <img className="img-artist" src={picture.artist.image} alt={`Picture of ${picture.artist.name}`} />
                 <h3>{picture.year}</h3>
                 <p>{picture.description}</p>
                 <a href={picture.source} target="_blank" >GO TO SOURCE</a>
