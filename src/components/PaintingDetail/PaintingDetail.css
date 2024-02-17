@@ -1,7 +1,8 @@
 .PaintingDetail {
     display: grid;
     padding: 1.25rem 1.5rem 0 1.5rem;
-    grid-template-rows: 1fr auto; /*Sticky footer*/
+    grid-template-rows: 1fr auto;
+    /*Sticky footer*/
     margin: 0 auto;
     min-height: 100vh;
     max-width: 578px;
@@ -36,6 +37,7 @@
         margin-top: -20%;
         margin-bottom: -10%;
     }
+
     .title {
         background-color: var(--clr-100);
         padding: 1.5rem;
@@ -56,7 +58,7 @@
 
     h3 {
         margin-top: 8px;
-        line-height: 0.45; 
+        line-height: 0.45;
         justify-self: self-end;
         color: var(--clr-200);
         font-size: 100px;
@@ -90,7 +92,7 @@
         width: 100vw;
         height: 100vh;
         background-color: hsl(0, 0%, 0%, 0.9);
-       
+
         >div {
             display: flex;
             position: relative;
@@ -114,8 +116,56 @@
             width: 80%;
         }
     }
-    
+
     .modal.invisible {
         display: none;
+    }
+
+    @media screen and (min-width: 576px) {
+
+        /*CAMBIAR LAS FOTOS DEL HERO*/
+
+        .button-viewImage {
+            position: relative;
+            bottom: 3.75rem;
+            max-width: fit-content;
+            width: 50%;
+            margin: 0 0 0 1rem;
+
+
+            img {
+                margin-right: 14px;
+            }
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 50%;
+            width: 35%;
+            /* background-color: aqua; */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .img-artist {
+            align-self: flex-end;
+            margin-left: 0;
+
+        }
+
+        h3 {
+            margin-top: 0;
+            /*aaaaa*/
+            line-height: 1;
+            /*asdsf*/
+            justify-self: self-start;
+            font-size: 200px;
+        }
+
+
+
+
     }
 }

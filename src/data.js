@@ -49,6 +49,23 @@ import arnolfiniHeroSmall from "./assets/arnolfini-portrait/hero-small.jpg";
 import monalisaHeroSmall from "./assets/mona-lisa/hero-small.jpg";
 import swingHeroSmall from "./assets/the-swing/hero-small.jpg";
 
+/*Hero large size images  */
+import starryHeroLarge from "./assets/starry-night/hero-large.jpg";
+import girlHeroLarge from "./assets/girl-with-pearl-earring/hero-large.jpg";
+import guernicaHeroLarge from "./assets/guernica/hero-large.jpg";
+import penitentHeroLarge from "./assets/penitent-magdalene/hero-large.jpg";
+import stormHeroLarge from "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg";
+import waveHeroLarge from "./assets/the-great-wave-off-kanagawa/hero-large.jpg";
+import vangoghHeroLarge from "./assets/van-gogh-self-portrait/hero-large.jpg"
+import sleepingHeroLarge from "./assets/the-sleeping-gypsy/hero-large.jpg";
+import ladyHeroLarge from "./assets/lady-with-an-ermine/hero-large.jpg";
+import cafeHeroLarge from "./assets/the-night-cafe/hero-large.jpg";
+import basketHeroLarge from "./assets/the-basket-of-apples/hero-large.jpg";
+import boyHeroLarge from "./assets/the-boy-in-the-red-vest/hero-large.jpg";
+import arnolfiniHeroLarge from "./assets/arnolfini-portrait/hero-large.jpg";
+import monalisaHeroLarge from "./assets/mona-lisa/hero-large.jpg";
+import swingHeroLarge from "./assets/the-swing/hero-large.jpg";
+
 /*Gallery images */
 import starryGallery from "./assets/starry-night/gallery.jpg";
 import girlGallery from "./assets/girl-with-pearl-earring/gallery.jpg";
@@ -81,7 +98,7 @@ const data = [
         "thumbnail": starryThumb,
         "hero": {
           "small": starryHeroSmall,
-          "large": "./assets/starry-night/hero-large.jpg"
+          "large": starryHeroLarge
         },
         "gallery": starryGallery
       }
@@ -100,7 +117,7 @@ const data = [
         "thumbnail": girlThumb,
         "hero": {
           "small": girlHeroSmall,
-          "large": "./assets/girl-with-pearl-earring/hero-large.jpg"
+          "large": girlHeroLarge
         },
         "gallery": girlGallery
       }
@@ -119,7 +136,7 @@ const data = [
         "thumbnail": guernicaThumb,
         "hero": {
           "small": guernicaHeroSmall,
-          "large": "./assets/guernica/hero-large.jpg"
+          "large": guernicaHeroLarge
         },
         "gallery": guernicaGallery
       }
@@ -138,7 +155,7 @@ const data = [
         "thumbnail": penitentThumb,
         "hero": {
           "small": penitentHeroSmall,
-          "large": "./assets/penitent-magdalene/hero-large.jpg"
+          "large": penitentHeroLarge
         },
         "gallery": penitentGallery
       }
@@ -157,7 +174,7 @@ const data = [
         "thumbnail": stormThumb,
         "hero": {
           "small": stormHeroSmall,
-          "large": "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
+          "large": stormHeroLarge
         },
         "gallery": stormGallery
       }
@@ -176,7 +193,7 @@ const data = [
         "thumbnail": waveThumb,
         "hero": {
           "small": waveHeroSmall,
-          "large": "./assets/the-great-wave-off-kanagawa/hero-large.jpg"
+          "large": waveHeroLarge
         },
         "gallery": waveGallery
       }
@@ -195,7 +212,7 @@ const data = [
         "thumbnail": vangoghThumb,
         "hero": {
           "small": vangoghHeroSmall,
-          "large": "./assets/van-gogh-self-portrait/hero-large.jpg"
+          "large": vangoghHeroLarge
         },
         "gallery": vangoghGallery
       }
@@ -214,7 +231,7 @@ const data = [
         "thumbnail": sleepingThumb,
         "hero": {
           "small": sleepingHeroSmall,
-          "large": "./assets/the-sleeping-gypsy/hero-large.jpg"
+          "large": sleepingHeroLarge
         },
         "gallery": sleepingGallery
       }
@@ -233,7 +250,7 @@ const data = [
         "thumbnail": ladyThumb,
         "hero": {
           "small": ladyHeroSmall,
-          "large": "./assets/lady-with-an-ermine/hero-large.jpg"
+          "large": ladyHeroLarge
         },
         "gallery": ladyGallery
       }
@@ -252,7 +269,7 @@ const data = [
         "thumbnail": cafeThumb,
         "hero": {
           "small": cafeHeroSmall,
-          "large": "./assets/the-night-cafe/hero-large.jpg"
+          "large": cafeHeroLarge
         },
         "gallery": cafeGallery
       }
@@ -271,7 +288,7 @@ const data = [
         "thumbnail": basketThumb,
         "hero": {
           "small": basketHeroSmall,
-          "large": "./assets/the-basket-of-apples/hero-large.jpg"
+          "large": basketHeroLarge
         },
         "gallery": basketGallery
       }
@@ -290,7 +307,7 @@ const data = [
         "thumbnail": boyThumb,
         "hero": {
           "small": boyHeroSmall,
-          "large": "./assets/the-boy-in-the-red-vest/hero-large.jpg"
+          "large": boyHeroLarge
         },
         "gallery": boyGallery
       }
@@ -309,7 +326,7 @@ const data = [
         "thumbnail": arnolfiniThumb,
         "hero": {
           "small": arnolfiniHeroSmall,
-          "large": "./assets/arnolfini-portrait/hero-large.jpg"
+          "large": arnolfiniHeroLarge
         },
         "gallery": arnolfiniGallery
       }
@@ -328,7 +345,7 @@ const data = [
         "thumbnail": monalisaThumb,
         "hero": {
           "small": monalisaHeroSmall,
-          "large": "./assets/mona-lisa/hero-large.jpg"
+          "large": monalisaHeroLarge
         },
         "gallery": monalisaGallery
       }
@@ -347,7 +364,7 @@ const data = [
         "thumbnail": swingThumb,
         "hero": {
           "small": swingHeroSmall,
-          "large": "./assets/the-swing/hero-large.jpg"
+          "large": swingHeroLarge
         },
         "gallery": swingGallery
       }

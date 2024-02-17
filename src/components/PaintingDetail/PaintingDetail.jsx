@@ -14,8 +14,8 @@ function PaintingDetail() {
     return (
         <div className="PaintingDetail">
             <div>
-                <img src={picture.images.hero.small} alt={`Picture of ${picture.name}`}
-                // srcset=""
+                <img srcset={`${picture.images.hero.small} 575w, ${picture.images.hero.large} 576w`}
+                    alt={`Picture of ${picture.name}`}
                 />
                 <button className="button-viewImage" onClick={() => setVisible(!isVisible)}>
                     <img src={iconView} alt="view image icon" /> VIEW IMAGE</button>
@@ -30,8 +30,8 @@ function PaintingDetail() {
                 <p>{picture.description}</p>
                 <a href={picture.source} target="_blank" >GO TO SOURCE</a>
             </div>
-            
-            <Footer data={data} picture={picture}/>
+
+            <Footer data={data} picture={picture} />
 
             <div className={`modal ${!isVisible ? 'invisible' : null}`}>
                 <div>
