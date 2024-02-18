@@ -14,11 +14,13 @@ function PaintingDetail() {
     return (
         <div className="PaintingDetail">
             <div>
-                <img srcset={`${picture.images.hero.small} 575w, ${picture.images.hero.large} 576w`}
-                    alt={`Picture of ${picture.name}`}
-                />
-                <button className="button-viewImage" onClick={() => setVisible(!isVisible)}>
-                    <img src={iconView} alt="view image icon" /> VIEW IMAGE</button>
+                <div className="img-hero-container">
+                    <img className="img-hero" srcset={`${picture.images.hero.small} 575w, ${picture.images.hero.large} 576w`}
+                        alt={`Picture of ${picture.name}`}
+                    />
+                    <button className="button-viewImage" onClick={() => setVisible(!isVisible)}>
+                        <img src={iconView} alt="view image icon" /> VIEW IMAGE</button>
+                </div>
                 <div className="title-container">
                     <div className="title">
                         <h1>{picture.name}</h1>
