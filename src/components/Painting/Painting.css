@@ -20,4 +20,16 @@
         width: 246px;
         margin-bottom: 1.5rem;
     }
+
+    .filter {
+        transform: translate(-1.5rem, 1.5rem);
+        height: 15%;
+        width: 327px;
+        background: linear-gradient(hsl(0, 0%, 0%, 0.01%), hsl(0, 0%, 0%, 84.17%));
+    }
+
+    h2,h3 {
+        position: relative;
+        z-index: 1; 
+    }
 }
