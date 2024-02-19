@@ -17,7 +17,7 @@ function Footer({ data, picture }) {
                     <h4>{picture.name}</h4>
                     <h5>{picture.artist.name}</h5>
                 </div>
-                <div>
+                <div className='links'>
                     <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`} className={`${isFirstElement ? 'disabled' : null}`}>
                         <img src={backButton} alt="back button icon"/>
                     </Link>
