@@ -18,11 +18,11 @@ function Footer({ data, picture }) {
                     <h5>{picture.artist.name}</h5>
                 </div>
                 <div>
-                    <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`}>                       
-                        <button disabled={isFirstElement}><img src={backButton} alt="back button icon" /></button>
+                    <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`} className={`${isFirstElement ? 'disabled' : null}`}>
+                        <img src={backButton} alt="back button icon"/>
                     </Link>
-                    <Link to={`/${!isLastElement ? picture.id + 1 : picture.id}`}>
-                        <button disabled={isLastElement}><img src={nextButton} alt="next button icon" /></button>
+                    <Link to={`/${!isLastElement ? picture.id + 1 : picture.id}`} className={`${isLastElement ? 'disabled' : null}`}>
+                        <img src={nextButton} alt="next button icon"/>
                     </Link>
                 </div>
             </div>

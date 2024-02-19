@@ -36,15 +36,12 @@
         }
     }
 
-    button {
+    a {
         margin-left: 1.5rem;
-        width: 1rem;
-        height: 1rem;
     }
 
-    button:disabled {
+    a.disabled {
         cursor: initial;
         filter: contrast(0);
     }
-
 }
