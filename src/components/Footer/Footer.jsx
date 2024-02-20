@@ -3,7 +3,6 @@ import './Footer.css'
 import backButton from '../../assets/shared/icon-back-button.svg';
 import nextButton from '../../assets/shared/icon-next-button.svg';
 
-
 function Footer({ data, picture }) {
 
     const isFirstElement = picture.id === 1;
@@ -11,7 +10,7 @@ function Footer({ data, picture }) {
 
     return (
         <footer className='footer'>
-            <progress max={data.length} value={picture.id}></progress>
+            <progress max={data.length} value={picture.id} aria-label='slideshow progress bar'></progress>
             <div className='flex'>
                 <div>
                     <h4>{picture.name}</h4>
@@ -19,10 +18,10 @@ function Footer({ data, picture }) {
                 </div>
                 <div className='links'>
                     <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`} className={`${isFirstElement ? 'disabled' : null}`}>
-                        <img src={backButton} alt="back button icon"/>
+                        <img src={backButton} alt="back button icon" />
                     </Link>
                     <Link to={`/${!isLastElement ? picture.id + 1 : picture.id}`} className={`${isLastElement ? 'disabled' : null}`}>
-                        <img src={nextButton} alt="next button icon"/>
+                        <img src={nextButton} alt="next button icon" />
                     </Link>
                 </div>
             </div>

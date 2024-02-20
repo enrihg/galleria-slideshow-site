@@ -28,8 +28,15 @@
         background: linear-gradient(hsl(0, 0%, 0%, 0.01%), hsl(0, 0%, 0%, 84.17%));
     }
 
-    h2,h3 {
+    h2,
+    h3 {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
+    }
+
+    &:hover {
+        img {
+            filter: opacity(0.5);
+        }
     }
 }

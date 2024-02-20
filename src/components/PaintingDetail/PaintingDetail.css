@@ -55,24 +55,25 @@
         width: 85%;
     }
 
-    h1 {
+    h2 {
         color: var(--clr-900);
         font-size: 24px;
         margin-bottom: 0.5rem;
     }
 
-    h2 {
+    h3 {
         color: var(--clr-700);
         font-size: 15px;
         font-weight: 400;
     }
 
-    h3 {
+    .picture-year {
         margin-top: -1rem;
         line-height: 0.45;
         justify-self: self-end;
         color: var(--clr-200);
         font-size: 100px;
+        z-index: -1;
     }
 
     .img-artist {
@@ -99,7 +100,7 @@
         display: grid;
         position: fixed;
         justify-content: center;
-        padding: 0 10% 0 10%;
+        padding: 2rem 10% 0 10%;
         top: 0;
         left: 0;
         width: 100vw;
@@ -107,15 +108,18 @@
         background-color: hsl(0, 0%, 0%, 0.9);
 
         >div {
-            display: flex;
+            display: grid;
             position: relative;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10%;
+            max-height: 80%;
+            max-width: 80%;
+            margin: 0 auto;
         }
 
         .button-closeImage {
-            align-self: flex-end;
+            height: fit-content;
+            max-width: fit-content;
+            justify-self: center;
+            align-self: self-end;
             position: relative;
             margin-bottom: 2rem;
             background: none;
@@ -127,14 +131,15 @@
         }
 
         img {
+            justify-self: center;
             max-width: 100%;
+            max-height: 100%;
         }
     }
 
     .modal.invisible {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 576px) {
@@ -173,15 +178,15 @@
             margin-left: 0;
         }
 
-        h1 {
+        h2 {
             font-size: 40px;
         }
 
-        h2 {
+        h3 {
             margin-top: 1.5rem;
         }
 
-        h3 {
+        .picture-year {
             margin-top: 3rem;
             margin-bottom: -6rem;
             line-height: 1;
@@ -205,7 +210,6 @@
             width: 75%;
             margin: 2.5rem auto 2.5rem auto;
         }
-
     }
 }
 
@@ -217,11 +221,11 @@
             padding: 0 0 4rem 4rem;
         }
 
-        h1 {
+        h2 {
             font-size: 56px;
         }
 
-        h3 {
+        .picture-year {
             font-size: 200px;
         }
 
@@ -236,7 +240,6 @@
 
         >:first-child {
             grid-template-columns: 65% 35%;
-            /* column-gap: 5%; */
             align-items: center;
         }
 
@@ -248,26 +251,22 @@
         .title-container {
             height: 100%;
             justify-content: space-between;
-            grid-column: 1/2; /*aaaaaaaaaaaa*/
-
+            grid-column: 1/2;
         }
 
         .img-artist {
             align-self: end;
             justify-self: end;
-
             position: relative;
             left: 20%;
             align-self: center;
-
         }
 
-        h3 {
+        .picture-year {
             position: absolute;
             top: 0;
             max-width: 100%;
             font-size: 125px;
-            /*aaaa*/
             grid-column: 2;
             grid-row: 1;
             align-self: center;
@@ -292,7 +291,7 @@
     .PaintingDetail {
 
         .img-hero {
-            max-width: 70%;
+            max-width: 65%;
         }
     }
 }

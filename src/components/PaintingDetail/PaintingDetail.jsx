@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import data from '../../data.js';
-import './PaintingDetail.css';
 import Footer from "../Footer/Footer.jsx";
 import iconView from '../../assets/shared/icon-view-image.svg';
+import './PaintingDetail.css';
 
 function PaintingDetail() {
 
@@ -15,7 +15,7 @@ function PaintingDetail() {
         <div className="PaintingDetail">
             <div>
                 <div className="img-hero-container">
-                    <img className="img-hero" srcset={`${picture.images.hero.small} 575w, ${picture.images.hero.large} 576w`}
+                    <img className="img-hero" srcSet={`${picture.images.hero.small} 575w, ${picture.images.hero.large} 576w`}
                         alt={`Picture of ${picture.name}`}
                     />
                     <button className="button-viewImage" onClick={() => setVisible(!isVisible)}>
@@ -23,12 +23,12 @@ function PaintingDetail() {
                 </div>
                 <div className="title-container">
                     <div className="title">
-                        <h1>{picture.name}</h1>
-                        <h2>{picture.artist.name}</h2>
+                        <h2>{picture.name}</h2>
+                        <h3>{picture.artist.name}</h3>
                     </div>
                     <img className="img-artist" src={picture.artist.image} alt={`Picture of ${picture.artist.name}`} />
                 </div>
-                <h3>{picture.year}</h3>
+                <div className="picture-year">{picture.year}</div>
                 <p>{picture.description}</p>
                 <a href={picture.source} target="_blank" >GO TO SOURCE</a>
             </div>
