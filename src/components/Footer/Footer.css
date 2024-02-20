@@ -40,11 +40,11 @@
         flex-shrink: 0;
     }
 
-    a {
+    .navigation-link {
         margin-left: 1.5rem;
     }
 
-    a.disabled {
+    .navigation-link.disabled {
         cursor: initial;
         filter: contrast(0);
     }

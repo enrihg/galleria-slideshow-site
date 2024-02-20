@@ -17,10 +17,10 @@ function Footer({ data, picture }) {
                     <h5>{picture.artist.name}</h5>
                 </div>
                 <div className='links'>
-                    <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`} className={`${isFirstElement ? 'disabled' : null}`}>
+                    <Link to={`/${!isFirstElement ? picture.id - 1 : picture.id}`} className={`${isFirstElement ? 'disabled' : null} navigation-link`}>
                         <img src={backButton} alt="back button icon" />
                     </Link>
-                    <Link to={`/${!isLastElement ? picture.id + 1 : picture.id}`} className={`${isLastElement ? 'disabled' : null}`}>
+                    <Link to={`/${!isLastElement ? picture.id + 1 : picture.id}`} className={`${isLastElement ? 'disabled' : null} navigation-link`}>
                         <img src={nextButton} alt="next button icon" />
                     </Link>
                 </div>
